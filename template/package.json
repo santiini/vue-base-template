@@ -22,7 +22,7 @@
     "fastclick": "^1.0.6",
     "vux": "^2.5.3",
     "vuex": "^2.1.1",
-    {{/vux}
+    {{/vux}}
     "axios": "^0.16.2"
   },
   "devDependencies": {
