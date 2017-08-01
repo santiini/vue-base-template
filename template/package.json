@@ -18,7 +18,8 @@
     "vue-router": "^2.6.0"{{/router}}{{#vux}}
     "fastclick": "^1.0.6",
     "vux": "^2.5.3"
-    "vuex": "^2.1.1"{{/vux}
+    "vuex": "^2.1.1"{{/vux},
+    "axios": "^0.16.2",
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -40,6 +41,16 @@
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.0",
     "cssnano": "^3.10.0",
+    {{#precss}}
+    {{#if_eq precssConfig "less"}}
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    {{/if_eq}}
+    {{#if_eq precssConfig "sass"}}
+    "sass-loader": "^6.0.6",
+    "node-sass": "^4.5.3",
+    {{/if_eq}}
+    {{/precss}}
     {{#lint}}
     "eslint": "^3.19.0",
     "eslint-friendly-formatter": "^3.0.0",
